@@ -1,0 +1,389 @@
+@import "_main.scss";
+@import "_variables.scss";
+@import "_header.scss";
+@import "_footer.scss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,700&display=swap');
+
+.newArrivals__backSide {
+  width: 100%;
+  height: 148px;
+  background-color: #f8f3f4;
+}
+
+.newArrivals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 148px;
+}
+
+.newArrivals__leftSide {
+  .newArrivals__leftSide-text {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #f16d7f;
+  }
+}
+
+.newArrivals__rightSide {
+  .newArrivals__nav {
+    .newArrivals__ul {
+      .newArrivals__li {
+        display: inline-block;
+        a {
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 300;
+          text-transform: uppercase;
+          color: #636363;
+          .newArrivals__li-selected {
+            font-weight: 700;
+            color: #f16d7f;
+          }
+          &:hover {
+            font-weight: 700;
+            color: #f16d7f;
+          }
+        }
+      }
+    }
+  }
+}
+
+.productList__leftSide {
+  display: flex;
+  align-items: center;
+  width: 480px;
+  min-width: 276px;
+  height: inherit;
+  float: left;
+}
+
+.productList__rightSide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 660px;
+  height: inherit;
+  float: right;
+}
+
+.productList {
+  .productList__mainLine {
+    display: flex;
+    height: 47px;
+    margin-top: 90px;
+    .productList__productInfo-columnName {
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #222222;
+    }
+    .productList__productSettings-columnName {
+      width: 132px;
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      color: #222222;
+    }
+  }
+}
+
+.productList__item {
+  display: flex;
+  height: 160px;
+  .productList__img {
+    width: 100px;
+    height: 115px;
+  }
+  .productList__description {
+    margin-left: 21px;
+    .productList__description-name {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #222222;
+      a{
+        &:hover {
+          color: #f16d7f;
+        }
+      }
+    }
+    .productList__description-spec {
+      margin-top: 38px;
+      font-weight: 300;
+      color: #6f6e6e;
+      .productList-colorSize {
+        font-weight: 400;
+        color: #5d5d5d;
+      }
+    }
+  }
+  .productList__productSettings-column {
+    display: flex;
+    justify-content: center;
+    width: 132px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #656565;
+    input {
+      width: 31px;
+      height: 30px;
+      border: 1px solid #eaeaea;
+      padding-left: 23px;
+    }
+    a {
+      display: flex;
+      width: 15px;
+      height: 15px;
+      color: #656565;
+      &:hover {
+        color: #f16d7f;
+      }
+    }
+  }
+}
+
+.clearShoppingCart {
+  margin-top: 44px;
+  height: 157px;
+  .clearShoppingCart__leftSide {
+    display: flex;
+    float: left;
+    .clearShoppingCart__border {
+      width: 235px;
+      height: 50px;
+      border: 1px solid #eaeaea;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+        height: inherit;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #4a4a4a;
+        &:hover {
+          background-color: #ededed;
+        }
+      }
+    }
+  }
+  .clearShoppingCart__rightSide {
+    display: flex;
+    float: right;
+    .clearShoppingCart__border {
+      width: 235px;
+      height: 50px;
+      border: 1px solid #eaeaea;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+        height: inherit;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #4a4a4a;
+        &:hover {
+          background-color: #ededed;
+        }
+      }
+    }
+  }
+}
+
+.shippingAdress {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 79px;
+  .shippingAdress__form1 {
+    width: 355px;
+    .shippingAdress__form1-name {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #222222;
+      margin-bottom: 22px;
+    }
+    .shippingAdress__bangladesh {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 325px;
+      height: 45px;
+      border: 1px solid #eaeaea;
+      padding-left: 18px;
+      padding-right: 12px;
+      margin-bottom: 20px;
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: inherit;
+        height: inherit;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #b1b1b1;
+      }
+      &:hover {
+        background-color: #ededed;}
+    }
+    input {
+      border: 1px solid #eaeaea;
+      width: 337px;
+      height: 45px;
+      margin-bottom: 20px;
+      padding-left: 18px;
+      &::placeholder {
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #b1b1b1;
+      }
+    }
+    button {
+      border: 1px solid #eaeaea;
+      width: 114px;
+      height: 35px;
+      background-color: #fff;
+      font-size: 11px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #4a4a4a;
+      margin-top: 3px;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+        height: inherit;
+        &:hover {background-color: #ededed;}
+      }
+    }
+  }
+  .shippingAdress__form2 {
+
+    width: 355px;
+    margin-left: 35px;
+    .shippingAdress__form2-name {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #222222;
+    }
+    .shippingAdress__text {
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 300;
+      color: #000000;
+      margin-top: 28px;
+    }
+    input {
+      border: 1px solid #eaeaea;
+      width: 337px;
+      height: 45px;
+      padding-left: 18px;
+      margin-top: 24px;
+      &::placeholder {
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #b1b1b1;
+      }
+    }
+    button {
+      border: 1px solid #eaeaea;
+      width: 114px;
+      height: 35px;
+      background-color: #fff;
+      font-size: 11px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #4a4a4a;
+      margin-top: 25px;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+        height: inherit;
+        &:hover {background-color: #ededed;}
+      }
+    }
+  }
+}
+
+.grandTotal {
+  width: 360px;
+  height: 214px;
+  background-color: #f5f3f3;
+  margin-left: 35px;
+  .grandTotal__subTotal {
+    margin-top: 40px;
+    .grandTotal__subTotal-text1 {
+      font-size: 11px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #4a4a4a;
+      float: right;
+      .subTotal-name {
+      }
+    }
+    .grandTotal__subTotal-text2 {
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #4a4a4a;
+      float: right;
+      clear: both;
+      margin-top: 14px;
+      margin-bottom: 22px;
+      .grandTotal-name {
+        color: #f16d7f;
+        margin-left: 20px;
+      }
+    }
+    .underLine {
+      border-bottom: 1px solid #e2e2e2;
+      clear: both;
+    }
+  }
+  .grandTotal__proceed {
+    width: 273px;
+    height: 50px;
+    margin-top: 17px;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: inherit;
+      height: inherit;
+      background-color: #f16d7f;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ffffff;
+      &:hover {background-color: #f2576c;}
+    }
+  }
+}
+
+.grandTotal-container {
+  max-width: 273px;
+  margin: 0 auto;
+}
